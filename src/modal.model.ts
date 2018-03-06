@@ -8,12 +8,12 @@ export enum AlertType {
 }
 
 export class Modal {
-    type: AlertType;
-    title: string;
-    remark: string;
-    content: TemplateRef<any> | string;
-    cancelText: string;
-    okText: string;
-    onCancel: Function;
-    onOk: Function;
+    type?: AlertType;
+    title?: string;
+    remark?: string;
+    content?: TemplateRef<any> | string;
+    cancelText?: string;
+    okText?: string;
+    onCancel?: Function;
+    onOk?: Function;
 }
