@@ -1,0 +1,28 @@
+{
+  "name": "zu-modal",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OrangeBao/zu-zu-modal.git"
+  },
+  "author": {
+    "name": "baoyinghai",
+    "email": "245382441@amarsoft.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OrangeBao/zu-zu-modal.git/issues"
+  },
+  "main": "zu-modal.umd.js",
+  "module": "zu-modal.js",
+  "jsnext:main": "zu-modal.js",
+  "typings": "zu-modal.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

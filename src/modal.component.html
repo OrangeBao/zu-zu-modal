@@ -1,0 +1,31 @@
+<div class="m-w">
+    <div class="m-b">
+        <div class="m-t">
+          <span>{{title}}</span>
+          <i class="iconfont icon-delete" (click)="closeModal()"></i>
+        </div>
+        <div class="c-w">
+            <ng-template #defaultContent>{{ content }}</ng-template>
+            <ng-template [ngTemplateOutlet]="contentTpl || defaultContent"></ng-template>
+        </div>
+        <div class="a-b">
+            <div class="btn primary" (click)="onOk()">{{okText || defaultOkText}}</div>
+            <div class="btn default" *ngIf="!!onCancelHandle" (click)="onCancel()">{{cancelText || defaultCancelText}}</div>
+        </div>
+      </div>
+</div>
+
+<ng-template #alertTemp>
+    <div class="alert-w">
+        <div class="m">
+          <i class="iconfont icon-xinxi" *ngIf="type === 1"></i>
+          <i class="iconfont icon-jinggao" *ngIf="type === 2"></i>
+          <i class="iconfont icon-shibai" *ngIf="type === 3"></i>
+          <i class="iconfont icon-chenggong" *ngIf="type === 0"></i>
+          <span>{{alertContent}}</span>
+        </div>
+        <div class="r">
+          {{remark}}
+        </div>
+    </div>
+</ng-template>
